@@ -10,10 +10,10 @@ file_path = "books.txt"
 class tovar_pos:
 
     def __init__(self, buyer, title, kolichestvo, cena):
-        self.buyer = buyer
-        self.title = title
-        self.kolichestvo = kolichestvo
-        self.cena = cena
+        buyer : str
+        title : str
+        kolichestvo : float
+        cena : float
 
 
 class detalization:
