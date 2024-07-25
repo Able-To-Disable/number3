@@ -1,20 +1,17 @@
 import argparse
-from dataclasses import dataclass
 
 file_path = "books.txt"
 #создаём в репозитории новый файл с названием books.txt
 
 #создаём  класс tovar_pos, который представляет товар в покупке.
 #У класса есть четыре атрибута: buyer, title, kolichestvo и cena, которые хранят информацию о покупателе, наименовании товара, количестве товара и цене соответственно.
-@dataclass
 class tovar_pos:
 
-    def __init__(self, buyer, title, kolichestvo, cena):
-        buyer : str
-        title : str
-        kolichestvo : float
-        cena : float
-
+ def __init__(self, buyer, title, kolichestvo, cena):
+        self.buyer = buyer
+        self.title = title
+        self.kolichestvo = kolichestvo
+        self.cena = cena
 
 class detalization:
     def __init__(self):
